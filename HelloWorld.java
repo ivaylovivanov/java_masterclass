@@ -1,21 +1,15 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, Tim");
+        int myValue = 10000;
 
-        int myFirstNumber = (10 + 5) + (2 * 10);
-        System.out.println(myFirstNumber);
+        int myMinIntValue = Integer.MIN_VALUE;
+        System.out.println(myMinIntValue);
 
-        int mySecondNumber = 12;
-        int myThirdNumber = 6;
+        int myMaxIntValue = Integer.MAX_VALUE;
+        System.out.println("Integer Maximum value is " + myMaxIntValue);
+        System.out.println("Integer Maximum value is " + Integer.MAX_VALUE);
 
-        int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
-        System.out.println(myTotal);
-
-        myThirdNumber = myFirstNumber * 2;
-        System.out.println(myThirdNumber);
-
-        int myLastOne = 1000 - myTotal;
-        System.out.println(myLastOne);
+        System.out.println("Integer value range is (" + myMinIntValue + " to " + myMaxIntValue + ")");
 
     }
 
