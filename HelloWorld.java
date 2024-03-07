@@ -2,17 +2,21 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, Tim");
 
-        int myFirstNumber = 5;
+        int myFirstNumber = (10 + 5) + (2 * 10);
         System.out.println(myFirstNumber);
 
-        myFirstNumber = 10;
-        System.out.println(myFirstNumber);
+        int mySecondNumber = 12;
+        int myThirdNumber = 6;
 
-        myFirstNumber = 1000;
-        System.out.println(myFirstNumber);
+        int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+        System.out.println(myTotal);
 
-        myFirstNumber = 10 + 5;
-        System.out.println(myFirstNumber);
+        myThirdNumber = myFirstNumber * 2;
+        System.out.println(myThirdNumber);
+
+        int myLastOne = 1000 - myTotal;
+        System.out.println(myLastOne);
+
     }
 
 }
