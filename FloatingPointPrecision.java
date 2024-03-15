@@ -18,13 +18,6 @@ public class FloatingPointPrecision {
         myDoubleValue = 5d / 3d;
         System.out.println(myDoubleValue);
 
-        myDoubleValue = 5.00 / 3.00;
-        System.out.println(myDoubleValue);
-        myDoubleValue = 5.00 / 3;
-        System.out.println(myDoubleValue);
-        myFloatValue = 5.00f / 3f;
-        System.out.println(myFloatValue);
-
         double pounds = 200;
         double kilograms = pounds * 0.45359237;
         System.out.println("kilograms: " + kilograms);
