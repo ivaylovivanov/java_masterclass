@@ -1,8 +1,8 @@
 public class FloatingPointPrecision {
     public static void main(String[] args) {
-        int myIntValue = 5;
-        float myFloatValue = 5;
-        double myDoubleValue = 5;
+        int myIntValue;
+        float myFloatValue;
+        double myDoubleValue;
 
         myIntValue = 5 /2;
         System.out.println(myIntValue);
