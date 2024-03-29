@@ -1,17 +1,13 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        short myMinShortValue = Short.MIN_VALUE;
-        int myMinIntValue = Integer.MIN_VALUE;
-        byte myByteMinValue = Byte.MIN_VALUE;
+        System.out.println("Hello, Tim");
 
-        int myTotal = (myMinIntValue / 2);
-        System.out.println(myTotal);
+        boolean isAlien = false;
 
-        byte myNewByteValue = (byte) (myByteMinValue / 2);
-        System.out.println(myNewByteValue);
-
-        short myNewShortValue = (short) (myMinShortValue / 2);
-        System.out.println(myNewShortValue);
+        if (!isAlien) {
+            System.out.println("It is not an alien.");
+            System.out.println("And I am afraid of aliens.");
+        }
     }
 
 }
