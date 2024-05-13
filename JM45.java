@@ -8,7 +8,6 @@ public class JM45 {
         int bonus = 100;
 
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
-        System.out.println("Your new score is " + highScore);
 
         score = 10_000;
         levelCompleted = 8;
