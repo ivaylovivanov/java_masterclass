@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        double kilometers = (100 * 1.609344);
 
-        int highScore = 50;
+        System.out.println(SpeedConverter.toMilesPerHour(1.5));
+        System.out.println(SpeedConverter.toMilesPerHour(10.25));
+        System.out.println(SpeedConverter.toMilesPerHour(-5.6));
+        System.out.println(SpeedConverter.toMilesPerHour(25.42));
+        System.out.println(SpeedConverter.toMilesPerHour(75.114));
 
-        if (highScore > 25){
-            highScore += 1_000; //bonus points
-        }
+        SpeedConverter.printConversion(1.5);
+        SpeedConverter.printConversion(10.25);
+        SpeedConverter.printConversion(-5.6);
+        SpeedConverter.printConversion(25.42);
+        SpeedConverter.printConversion(75.114);
 
-        int health = 100;
-
-        if ((health < 25) && (highScore > 1000)){
-            highScore -= 1_000;
-        }
 
     }
 }
