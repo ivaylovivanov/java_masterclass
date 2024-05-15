@@ -1,6 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
+          //CE-06
+        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(-3.1756, -3.175));
+        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.175, 3.176));
+        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.0, 3.0));
+        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(-3.123, 3.123));
+
+
+
 //        //CE-02 - Speed Converter
 //        SpeedConverter.printConversion(1.5);
 //        SpeedConverter.printConversion(10.25);
@@ -19,18 +27,19 @@ public class Main {
 //        System.out.println(BarkingDog.shouldWakeUp(true, 8));
 //        System.out.println(BarkingDog.shouldWakeUp(true, -1));
 
-        System.out.println("1600 is " + (LeapYear.isLeapYear(1600) ? "leap year" : "not a leap year"));
-        System.out.println("1700 is " + (LeapYear.isLeapYear(1700) ? "leap year" : "not a leap year"));
-        System.out.println("1800 is " + (LeapYear.isLeapYear(1800) ? "leap year" : "not a leap year"));
-        System.out.println("1900 is " + (LeapYear.isLeapYear(1900) ? "leap year" : "not a leap year"));
-        System.out.println("2000 is " + (LeapYear.isLeapYear(2000) ? "leap year" : "not a leap year"));
-        System.out.println("2017 is " + (LeapYear.isLeapYear(2017) ? "leap year" : "not a leap year"));
-        System.out.println("2100 is " + (LeapYear.isLeapYear(2100) ? "leap year" : "not a leap year"));
-        System.out.println("2200 is " + (LeapYear.isLeapYear(2200) ? "leap year" : "not a leap year"));
-        System.out.println("2300 is " + (LeapYear.isLeapYear(2300) ? "leap year" : "not a leap year"));
-        System.out.println("2400 is " + (LeapYear.isLeapYear(2400) ? "leap year" : "not a leap year"));
-        System.out.println("2500 is " + (LeapYear.isLeapYear(2500) ? "leap year" : "not a leap year"));
-        System.out.println("2600 is " + (LeapYear.isLeapYear(2600) ? "leap year" : "not a leap year"));
+          //CE-05
+//        System.out.println("1600 is " + (LeapYear.isLeapYear(1600) ? "leap year" : "not a leap year"));
+//        System.out.println("1700 is " + (LeapYear.isLeapYear(1700) ? "leap year" : "not a leap year"));
+//        System.out.println("1800 is " + (LeapYear.isLeapYear(1800) ? "leap year" : "not a leap year"));
+//        System.out.println("1900 is " + (LeapYear.isLeapYear(1900) ? "leap year" : "not a leap year"));
+//        System.out.println("2000 is " + (LeapYear.isLeapYear(2000) ? "leap year" : "not a leap year"));
+//        System.out.println("2017 is " + (LeapYear.isLeapYear(2017) ? "leap year" : "not a leap year"));
+//        System.out.println("2100 is " + (LeapYear.isLeapYear(2100) ? "leap year" : "not a leap year"));
+//        System.out.println("2200 is " + (LeapYear.isLeapYear(2200) ? "leap year" : "not a leap year"));
+//        System.out.println("2300 is " + (LeapYear.isLeapYear(2300) ? "leap year" : "not a leap year"));
+//        System.out.println("2400 is " + (LeapYear.isLeapYear(2400) ? "leap year" : "not a leap year"));
+//        System.out.println("2500 is " + (LeapYear.isLeapYear(2500) ? "leap year" : "not a leap year"));
+//        System.out.println("2600 is " + (LeapYear.isLeapYear(2600) ? "leap year" : "not a leap year"));
 
 
     }
