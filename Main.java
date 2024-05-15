@@ -1,11 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
+        //CE-07
+        System.out.println(EqualSumChecker.hasEqualSum(1,1,1));
+        System.out.println(EqualSumChecker.hasEqualSum(1,1,2));
+        System.out.println(EqualSumChecker.hasEqualSum(1,-1,0));
+
+
           //CE-06
-        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(-3.1756, -3.175));
-        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.175, 3.176));
-        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.0, 3.0));
-        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(-3.123, 3.123));
+//        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(-3.1756, -3.175));
+//        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.175, 3.176));
+//        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.0, 3.0));
+//        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(-3.123, 3.123));
 
 
 
