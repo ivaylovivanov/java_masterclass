@@ -31,9 +31,32 @@ public class JM70 {
 
         //String dateOfBirth = System.console().readLine("What year were you born?");
         System.out.println("What year were you born?");
-        String dateOfBirth = newScanner.nextLine();
-        int age = Integer.parseInt(dateOfBirth);
 
-        return "So you are " + (currentYear - age) + " years old.";
+        boolean validDOB = false;
+        int age = 0;
+
+        do{
+            System.out.println("Enter an year of birth >= " +
+                    (currentYear - 125) + " and <= " + currentYear + " years old.");
+            try {
+                age = checkDate(currentYear, newScanner.nextLine());
+                validDOB = age >= 0;
+            }catch (NumberFormatException badUserData){
+                System.out.println("Characters not allowed!!! Please try again.");
+            }
+        } while (!validDOB);
+
+
+        return "So you are " + age + " years old.";
+    }
+
+    public static int checkDate(int currentYear, String dateOfBirth){
+        int dob = Integer.parseInt(dateOfBirth);
+        int minimalYear = currentYear - 125;
+        if(dob < minimalYear || dob > currentYear){
+            return -1;
+        }
+
+        return (currentYear - dob);
     }
 }
