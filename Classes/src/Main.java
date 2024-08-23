@@ -1,36 +1,20 @@
 public class Main {
     public static void main(String[] args) {
 
-       // Account bobAccount = new Account(2, 0.0, "Ivaylo Ivanov", "test@test.com", "+0123456789");
-        Account bobAccount = new Account();
-        System.out.println("Account Created: " +
-                bobAccount.getName() + " " +
-                bobAccount.getBalance() + " " +
-                bobAccount.getEmail() + " " +
-                bobAccount.getPhoneNumber() + " " +
-                bobAccount.getNumber());
+        Customer myCustomer = new Customer("Tim", 1000.0, "tim@gmail.com");
+        System.out.println(myCustomer.getName());
+        System.out.println(myCustomer.getCreditLimit());
+        System.out.println(myCustomer.getEmailAddress());
 
-        System.out.println(bobAccount.getNumber());
-        System.out.println(bobAccount.getBalance());
+        Customer secondCustomer = new Customer();
+        System.out.println(secondCustomer.getName());
+        System.out.println(secondCustomer.getCreditLimit());
+        System.out.println(secondCustomer.getEmailAddress());
 
-        bobAccount.depositFunds(110.11);
-        System.out.println("Account Deposit: " +
-                bobAccount.getName() + " " +
-                bobAccount.getBalance() + " " +
-                bobAccount.getEmail() + " " +
-                bobAccount.getPhoneNumber() + " " +
-                bobAccount.getNumber());
+        Customer thirdCustomer = new Customer("Joe", "joe@emai.com");
+        System.out.println(thirdCustomer.getName());
+        System.out.println(thirdCustomer.getCreditLimit());
+        System.out.println(thirdCustomer.getEmailAddress());
 
-        bobAccount.withdrawFunds(22);
-        System.out.println("Account Withdrawal: " +
-                bobAccount.getName() + " " +
-                bobAccount.getBalance() + " " +
-                bobAccount.getEmail() + " " +
-                bobAccount.getPhoneNumber() + " " +
-                bobAccount.getNumber());
-
-
-        Account timAccount = new Account("Tim", "test@gmail.com", "+35900891");
-        System.out.println("AccountNo:" + timAccount.getNumber() + "; name: " + timAccount.getName());
     }
 }
