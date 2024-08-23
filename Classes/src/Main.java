@@ -1,35 +1,33 @@
 public class Main {
     public static void main(String[] args) {
 
-        Account myAccount = new Account();
-        myAccount.setBalance(0.0);
-        myAccount.setEmail("ivalentinov@gmail.com");
-        myAccount.setName("Ivaylo Ivanov");
-        myAccount.setNumber(1);
-        myAccount.setPhoneNumber("+359887424989");
+        Account bobAccount = new Account(2, 0.0, "Ivaylo Ivanov", "test@test.com", "+0123456789");
 
         System.out.println("Account Created: " +
-                myAccount.getName() + " " +
-                myAccount.getBalance() + " " +
-                myAccount.getEmail() + " " +
-                myAccount.getPhoneNumber() + " " +
-                myAccount.getNumber());
+                bobAccount.getName() + " " +
+                bobAccount.getBalance() + " " +
+                bobAccount.getEmail() + " " +
+                bobAccount.getPhoneNumber() + " " +
+                bobAccount.getNumber());
 
-        myAccount.depositFunds(110.11);
+        System.out.println(bobAccount.getNumber());
+        System.out.println(bobAccount.getBalance());
+
+        bobAccount.depositFunds(110.11);
         System.out.println("Account Deposit: " +
-                myAccount.getName() + " " +
-                myAccount.getBalance() + " " +
-                myAccount.getEmail() + " " +
-                myAccount.getPhoneNumber() + " " +
-                myAccount.getNumber());
+                bobAccount.getName() + " " +
+                bobAccount.getBalance() + " " +
+                bobAccount.getEmail() + " " +
+                bobAccount.getPhoneNumber() + " " +
+                bobAccount.getNumber());
 
-        myAccount.withdrawFunds(22);
+        bobAccount.withdrawFunds(22);
         System.out.println("Account Withdrawal: " +
-                myAccount.getName() + " " +
-                myAccount.getBalance() + " " +
-                myAccount.getEmail() + " " +
-                myAccount.getPhoneNumber() + " " +
-                myAccount.getNumber());
+                bobAccount.getName() + " " +
+                bobAccount.getBalance() + " " +
+                bobAccount.getEmail() + " " +
+                bobAccount.getPhoneNumber() + " " +
+                bobAccount.getNumber());
 
 
 
