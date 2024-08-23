@@ -1,20 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        Customer myCustomer = new Customer("Tim", 1000.0, "tim@gmail.com");
-        System.out.println(myCustomer.getName());
-        System.out.println(myCustomer.getCreditLimit());
-        System.out.println(myCustomer.getEmailAddress());
+        for (int i = 0; i < 5; i++) {
+            Student s = new Student("S92300" + i,
+                    switch (i){
+                        case 0 -> "Mary";
+                        case 1 -> "John";
+                        case 2 -> "Jane";
+                        case 3 -> "Bob";
+                        case 4 -> "Jack";
+                        default -> "Anonymous";
+                    },
+                    "05/11/1985",
+                    "Java MasterClass");
 
-        Customer secondCustomer = new Customer();
-        System.out.println(secondCustomer.getName());
-        System.out.println(secondCustomer.getCreditLimit());
-        System.out.println(secondCustomer.getEmailAddress());
-
-        Customer thirdCustomer = new Customer("Joe", "joe@emai.com");
-        System.out.println(thirdCustomer.getName());
-        System.out.println(thirdCustomer.getCreditLimit());
-        System.out.println(thirdCustomer.getEmailAddress());
+            System.out.println(s);
+        }
 
     }
 }
