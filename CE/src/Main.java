@@ -1,11 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        CE33Point first = new CE33Point(6, 5);
-        CE33Point second = new CE33Point(3, 1);
-        System.out.println("distance(0,0)= " + first.distance());
-        System.out.println("distance(second)= " + first.distance(second));
-        System.out.println("distance(2,2)= " + first.distance(2, 2));
-        CE33Point point = new CE33Point();
-        System.out.println("distance()= " + point.distance());
+        CE35ComplexNumber one = new CE35ComplexNumber(1.0, 1.0);
+        CE35ComplexNumber number = new CE35ComplexNumber(2.5, -1.5);
+        one.add(1, 1);
+        System.out.println("one.real= " + one.getReal());
+        System.out.println("one.imaginary= " + one.getImaginary());
+        one.subtract(number);
+        System.out.println("one.real= " + one.getReal());
+        System.out.println("one.imaginary= " + one.getImaginary());
+        number.subtract(one);
+        System.out.println("number.real= " + number.getReal());
+        System.out.println("number.imaginary= " + number.getImaginary());
     }
 }
