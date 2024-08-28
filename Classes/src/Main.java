@@ -1,28 +1,16 @@
 public class Main extends Object{
     public static void main(String[] args) {
-        Animal animal = new Animal("generic animal", "Huge", 400);
-        doAnimalStuff(animal, "slow");
 
-        Dog dog = new Dog();
-        doAnimalStuff(dog, "fast");
+        Worker worker = new Worker("Ivo", "17/12/1984");
+        System.out.println(worker.getAge());
 
-        Dog yorkie = new Dog("Yorkie", 15);
-        doAnimalStuff(yorkie, "fast");
+        Employee ivo = new Employee("Ivo", "17/12/1984", "26/05/2024");
+        System.out.println(ivo);
+        System.out.println("Age: " + ivo.getAge());
+        System.out.println("Pay: " + ivo.collectPay());
 
-        Dog retriever = new Dog("Labrador Retriever", 65, "Floppy", "Swimmer");
-        doAnimalStuff(retriever, "slow");
-
-        Dog wolf = new Dog("Wolf", 40);
-        doAnimalStuff(wolf, "slow");
-
-        Fish goldie = new Fish("Goldfish", 0.25, 2,3);
-        doAnimalStuff(goldie, "fast");
-
-        GradStudent max = new GradStudent("Max", 21);
-        System.out.println(max);
-
-        PrimarySchoolStudent jimmy = new PrimarySchoolStudent("Jimmy", 8, "Carrol");
-        System.out.println(jimmy);
+        Employee john = new Employee("John", "11/11/1986", "12/12/1912");
+        System.out.println(john);
 
     }
 
