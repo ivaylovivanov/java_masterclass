@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
 public class CE28 {
-    public static void main(String[] args) {
-        inputThenPrintSumAndAverage();
-    }
 
     public static void inputThenPrintSumAndAverage(){
 

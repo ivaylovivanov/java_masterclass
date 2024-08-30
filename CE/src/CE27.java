@@ -1,11 +1,4 @@
 public class CE27 {
-    public static void main(String[] args) {
-        printSquareStar(2);
-        printSquareStar(4);
-        printSquareStar(5);
-        printSquareStar(8);
-        printSquareStar(10);
-    }
 
     public static void printSquareStar(int number) {
         if (number < 5) {
