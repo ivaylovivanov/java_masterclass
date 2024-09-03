@@ -1,13 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        JM102SmartKitchen smartKitchen = new JM102SmartKitchen();
 
-        smartKitchen.setKitchenState(true, true, true);
-        smartKitchen.doKitchenWork();
+        JM104Player player = new JM104Player();
+        player.fullName  = "Ivo";
+        player.health = 20;
+        player.weapon = "Sword";
 
-        smartKitchen.setKitchenState(false, true, false);
-        smartKitchen.doKitchenWork();
-
-
+        int damage = 10;
+        player.loseHealth(damage);
+        System.out.println("Remaining health: " + player.health);
+        player.health = 200;
+        player.loseHealth(damage);
+        System.out.println("Remaining health: " + player.health);
     }
 }
