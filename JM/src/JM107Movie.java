@@ -30,6 +30,10 @@ class Adventure extends JM107Movie{
         super.watchMovie();
         System.out.printf(".. %s%n".repeat(3), "Pleasant Scene", "Scary Music", "Something bad happens");
     }
+
+    public void watchAdventure() {
+        System.out.println("Watching an adventure");
+    }
 }
 
 class Comedy extends JM107Movie{
@@ -57,6 +61,10 @@ class ScienceFiction extends JM107Movie{
     public void watchMovie() {
         super.watchMovie();
         System.out.printf(".. %s%n".repeat(3), "Bad aliens do bad stuff", "Space guys chase aliens", "Planet blows up");
+    }
+
+    public void watchScienceFiction() {
+        System.out.println("Watching a science fiction");
     }
 }
 
