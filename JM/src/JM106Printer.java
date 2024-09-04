@@ -14,15 +14,18 @@ public class JM106Printer {
     }
 
     public int addToner(int tonerAmount) {
-        int tempTonerLevel = tonerLevel + tonerAmount;
-        if (tempTonerLevel > 100 || tempTonerLevel < 0) {
+
+        if (tonerAmount <= 0 || tonerAmount > 100) {
+            return -1;
+        } else if (tonerLevel + tonerAmount > 100) {
             return -1;
         }
 
-        return this.tonerLevel += tonerAmount;
+        tonerLevel += tonerAmount;
+        return tonerLevel;
     }
 
-    public int printPagers(int numPagesToPrint){
+    public int printPages(int numPagesToPrint){
         int sheetsPrinted;
         if (duplex){
             System.out.println("This is a duplex printer");
