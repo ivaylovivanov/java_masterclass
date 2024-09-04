@@ -42,6 +42,10 @@ class Comedy extends JM107Movie{
         super.watchMovie();
         System.out.printf(".. %s%n".repeat(3), "Something funny happens", "Something even funnier happens", "Happy ending");
     }
+
+    public void watchComedy(){
+        System.out.println("Watching an comedy");
+    }
 }
 
 class ScienceFiction extends JM107Movie{
