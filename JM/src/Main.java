@@ -1,24 +1,16 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-//        JM107Movie movie = JM107Movie.getMovie("Science Fiction", "Star Wars");
-//        movie.watchMovie();
+        JM111Car car = new JM111Car("2022 Blue Ferrari 296 GTS");
+        runRace(car);
 
+        JM111Car ferrari = new GasPoweredCar("2022 Red Ferrari Modena", 6, 15.4);
+        runRace(ferrari);
 
-        Scanner scanner = new Scanner(System.in);
-        while(true){
-            System.out.println("Enter Type ( A for Adventure, C for Comedy, S for Science Fiction, or Q to Quit");
-            String type = scanner.nextLine();
-            if("Qq".contains(type)){
-                break;
-            }
+    }
 
-            System.out.print("Enter movie title: ");
-            String title = scanner.nextLine();
-            JM107Movie movie = JM107Movie.getMovie(type, title);
-            movie.watchMovie();
-        }
+    public static void runRace(JM111Car car){
+        car.startEngine();
+        car.drive();
     }
 }
