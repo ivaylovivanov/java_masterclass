@@ -1,21 +1,26 @@
 public class Main {
     public static void main(String[] args) {
 
-        JM111Car car = new JM111Car("2022 Blue Ferrari 296 GTS");
-        runRace(car);
+//        JM113Item coke = new JM113Item("coke", 1.50, "drink");
+//        coke.printItem();
+//        coke.setSize("LARGE");
+//        coke.printItem();
+//
+//        JM113Item avocado = new JM113Item("avocado", 1.50, "Topping");
+//        avocado.printItem();
 
-        JM111Car ferrari = new GasPoweredCar("2022 Red Ferrari Modena", 6, 15.4);
-        runRace(ferrari);
+//        JM113Burger burger = new JM113Burger("regular", 4.00);
+//        burger.addToppings("BACON", "CHEESE", "MAYO");
+//        burger.printItem();
 
-        JM111Car tesla = new ElectricCar("2022 Red tesla Model 3", 75, 568);
-        runRace(tesla);
+//        JM113Meal regularMeal = new JM113Meal();
+//        regularMeal.addBurgerToppings("BACON", "CHEESE", "MAYO");
+//        regularMeal.setDrinkSize("LARGE");
+//        regularMeal.printItemizedList();
 
-        JM111Car ferrariHybrid = new HybridCar("2022 Black Ferrari SF90 Stradale", 8, 16, 8);
-        runRace(ferrariHybrid);
-    }
-
-    public static void runRace(JM111Car car){
-        car.startEngine();
-        car.drive();
+        JM113Meal secondMeal = new JM113Meal("turkey", "7-up", "chili");
+        secondMeal.addBurgerToppings("Lettuce", "CHeese", "Mayo");
+        secondMeal.setDrinkSize("SMALL");
+        secondMeal.printItemizedList();
     }
 }
